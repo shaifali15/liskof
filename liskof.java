@@ -13,23 +13,19 @@ class Rectangle extends Shape
 	{
     		m_width = width;
   	}
- 
-  	public void setHeight(int height) 
+    public void setHeight(int height) 
   	{
     		m_height = height;
   	}
- 
-  	public int getWidth() 
+    public int getWidth() 
   	{
    		 return m_width;
  	}
- 
-  	public int getHeight()
+    public int getHeight()
   	{
    		 return m_height;
   	}
- 
-  	public int calculateArea(int m_width, int m_height) 
+    public int calculateArea(int m_width, int m_height) 
   	{
     		return m_width * m_height;
   	}
@@ -62,7 +58,6 @@ class Square extends Shape
   	}
   	
 }
-
 class ShapeArea
 {
 	public static void main(String args[])
@@ -91,5 +86,10 @@ class ShapeArea
 		newSquare.setWidth(width);
 		newSquare.setHeight(height);
 		int squareWidth = newSquare.getWidth();
+		int squareHeight = newSquare.getHeight();
+		System.out.println("width of square: "+ squareWidth);
+		System.out.println("height of square: "+squareHeight);
+		int squareArea = newSquare.calculateArea(squareWidth, squareHeight);
+		System.out.println("area of square: "+squareArea);
 	}
 }
